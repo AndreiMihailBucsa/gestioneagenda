@@ -16,4 +16,16 @@ export class Contatto{
   getNomeCompleto():string{
     return this.nome + ' ' + this.cognome;
   }
+
+  isPreferito():boolean{
+    return this.nrStelle == 5;
+  }
+
+  setPreferito(){
+    this.nrStelle = 5;
+  }
+
+  setTextColor():string{
+    return this.isPreferito() ? 'red' : 'black';
+  }
 }
